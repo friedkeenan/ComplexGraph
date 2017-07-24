@@ -1,5 +1,4 @@
 Result result;
-Complex old,negOld;
 Complex[] root(Complex z,int n){ //Make eq() return this to get the roots of complex numbers
   Complex[] comps=new Complex[n]; //Might want to multiply each value by 10 or something
   for(int k=0;k<n;k++)
@@ -29,8 +28,6 @@ class Result extends PApplet{
     stroke(20);
     line(-translate.x,0,translate.x,0);
     line(0,-translate.y,0,translate.y);
-    old=new Complex(comp.real,comp.imag);
-    negOld=new Complex(comp.real,comp.imag);
   }
   void draw(){
     Complex[] w=eq(comp);
