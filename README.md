@@ -2,4 +2,4 @@
 
 It shows both the complex x and y axes.
 
-[Example](http://imgur.com/a/mfjNb)
+![](http://i.imgur.com/kb0Tv9b.gif)
