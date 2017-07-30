@@ -30,7 +30,7 @@ class Complex{
     return new Complex((float)Math.pow(Math.E,real),imag,true);
   }
   Complex csin(){ //Gets the sine of the complex number
-    return (new Complex(1,theta,true).add((new Complex(1,-theta,true)).mult(-1))).mult(0.5);
+    return (new Complex(1,theta,true).add((new Complex(1,-theta,true)).mult(-1))).div(new Complex(0,2));
   }
   Complex ccos(){ //Gets the cosine of the complex number
     return ((new Complex(1,theta,true)).add(new Complex(1,-theta,true))).mult(0.5);
