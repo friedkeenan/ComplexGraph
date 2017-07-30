@@ -60,7 +60,7 @@ class Complex{
     return add(z.mult(-1));
   }
   Complex power(float n){
-    return (new Complex(cos(n*theta),sin(n*theta))).mult(n*radius);
+    return (new Complex(cos(n*theta),sin(n*theta))).mult(pow(radius,n));
   }
   Complex power(Complex z){ //Takes the complex number to the power of another complex number
     Complex first=power(z.real);
